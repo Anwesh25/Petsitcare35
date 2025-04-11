@@ -15,7 +15,7 @@ public class Baseclass {
 	@BeforeSuite
 	public void openurl() {
 		
-		driver= new ChromeDriver();
+		driver= new EdgeDriver();
 		driver.get("https://products.ncryptedprojects.com/petsitcare/");
 	    driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

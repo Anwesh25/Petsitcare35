@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="petsitcare_User_TestCases.TC_01_login">
+      <class name="petsitcare_User_TestCases.TC_10_myservice">
         <methods>
-          <include name="login"/>
           <include name="openurl"/>
           <include name="closeurl"/>
+          <include name="myservice"/>
         </methods>
-      </class> <!-- petsitcare_User_TestCases.TC_01_login -->
+      </class> <!-- petsitcare_User_TestCases.TC_10_myservice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

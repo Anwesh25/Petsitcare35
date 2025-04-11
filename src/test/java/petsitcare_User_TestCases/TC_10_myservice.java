@@ -13,6 +13,7 @@ public class TC_10_myservice extends Baseclass {
 		
 		ms.jsp();
 		ms.myservice();
+		ms.service();
 		ms.search();
 		ms.edit();
 		ms.remove();
