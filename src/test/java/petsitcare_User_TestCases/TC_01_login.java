@@ -6,11 +6,11 @@ import base.Baseclass;
 import petsitcare_User_PageObjects.Login_PO_01;
 
 public class TC_01_login extends Baseclass {
-	
+	Login_PO_01 lg; 
 	@Test(priority=1)
 	public void login() {
 		
-		Login_PO_01 lg=new Login_PO_01(driver);
+		lg=new Login_PO_01(driver);
 		lg.sign();
 		lg.email("buyer.ncrypted@gmail.com");
 		lg.password("123456");

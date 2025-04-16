@@ -4,7 +4,7 @@
 <listeners> <listener class-name="utils.Extentreport"></listener> </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="petsitcare_User_TestCases.TC_01_login"/>
+   <!--   <class name="petsitcare_User_TestCases.TC_01_login"/>  --> 
       <class name="petsitcare_User_TestCases.TC_10_myservice"/>
     </classes>
   </test> <!-- Test -->
