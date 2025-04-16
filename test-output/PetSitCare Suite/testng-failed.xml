@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PetSitCare Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="petsitcare_Admin_TestCases(failed)">
+    <classes>
+      <class name="petsitcare_Admin_TestCases.ManageSubscribersTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testSubscribersActions"/>
+        </methods>
+      </class> <!-- petsitcare_Admin_TestCases.ManageSubscribersTest -->
+    </classes>
+  </test> <!-- petsitcare_Admin_TestCases(failed) -->
+</suite> <!-- Failed suite [PetSitCare Suite] -->

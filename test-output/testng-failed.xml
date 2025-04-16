@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PetSitCare_User_Admin]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AdminTest(failed)">
+    <classes>
+      <class name="petsitcare_Admin_TestCases.ManageSubscribersTest">
+        <methods>
+          <include name="ManageSubscribersTest"/>
+          <include name="openurl"/>
+          <include name="testSubscribersActions"/>
+        </methods>
+      </class> <!-- petsitcare_Admin_TestCases.ManageSubscribersTest -->
+    </classes>
+  </test> <!-- AdminTest(failed) -->
+</suite> <!-- Failed suite [PetSitCare_User_Admin] -->
