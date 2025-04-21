@@ -6,10 +6,11 @@ import Base.Baseclass;
 import petsitcare_Admin_PageObjects.Dashboard_PO_01;
 
 	public class TC_01Login extends Baseclass{
+		Dashboard_PO_01 login;
 		@Test
 		public void Login() throws InterruptedException {
 			
-			Dashboard_PO_01 login= new Dashboard_PO_01(driver);
+			login= new Dashboard_PO_01(driver);
 			login.signin();
 			login.username("buyer.ncrypted@gmail.com");
 			login.password("123456");
