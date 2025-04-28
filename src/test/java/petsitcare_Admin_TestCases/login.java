@@ -3,6 +3,7 @@ package petsitcare_Admin_TestCases;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
@@ -13,12 +14,14 @@ import utils.XLUtils;
 
 public class login extends Base{
 	
+	
+
 	@Test(priority = 1)
 	public void login1() throws IOException, InterruptedException {
 		
 		Dashboard_PO_01 Db=new Dashboard_PO_01(driver);
 		
-	     String file= "C:\\Users\\NISHITH\\git\\Petsitcare35\\excel\\Book1.xlsx";
+	     String file= "C:\\Users\\R.K COMPUTERS\\git\\Petsitcare35\\Petsitcare35\\Petsitcare35\\excel\\Book1.xlsx";
 		  int xlrow=XLUtils.getRowCount(file, "Sheet1");
 		
 		  for(int r=1;r<=xlrow;r++) {
@@ -28,6 +31,7 @@ public class login extends Base{
 		 Db.username(user);
 		 Db.password(psw);
 		 Db.login();
+		 Thread.sleep(3000);
 		 
 		 
 		 String actitle=driver.getTitle();
@@ -45,12 +49,13 @@ public class login extends Base{
 				ac.moveToElement(username).perform();
 				
 				Thread.sleep(3000);
+				if (r!=xlrow) {
 				
 			//WebElement logout=driver.findElement(By.xpath("(//i[@class='fa fa-key'])[1]"));
 		    WebElement logout=driver.findElement(By.xpath("//ul[@class='dropdown-menu']/li[2]/a"));
 			ac.moveToElement(logout).perform();
 			ac.click(logout).perform();
-			
+				}
 			Thread.sleep(3000);
 			//logout.click();
 						
@@ -59,7 +64,7 @@ public class login extends Base{
 				
 			}
 		  }
+	
 	}
-	
-	
 }
+	

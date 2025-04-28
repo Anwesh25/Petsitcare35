@@ -43,7 +43,7 @@ public class Base {
 		String timestamp= new SimpleDateFormat("yyyy.mm.dd.hh.mm.ss").format(new java.util.Date(0, 0, 0, 0, 0, 0));
 		TakesScreenshot sc=(TakesScreenshot)driver;
 		File sourcefile=sc.getScreenshotAs(OutputType.FILE);
-		File destination=new File("C:\\Users\\NISHITH\\git\\Petsitcare35\\screenshots\\"+timestamp+".png");
+		File destination=new File(System.getProperty("user.dir")+"\\screenshots\\"+timestamp+".png");
 		FileUtils.copyFile(sourcefile, destination);
 		
 	}
