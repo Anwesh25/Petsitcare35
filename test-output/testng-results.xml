@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T10:31:16 IST" name="Default suite" finished-at="2025-04-10T10:31:55 IST" duration-ms="39118">
+  <suite started-at="2025-04-29T10:51:36 IST" name="Default suite" finished-at="2025-04-29T10:53:26 IST" duration-ms="109742">
     <groups>
     </groups>
-    <test started-at="2025-04-10T10:31:16 IST" name="Default test" finished-at="2025-04-10T10:31:55 IST" duration-ms="39118">
-      <class name="petsitcare_Admin_TestCases.login">
-        <test-method is-config="true" signature="openurl()[pri:0, instance:petsitcare_Admin_TestCases.login@7586beff]" started-at="2025-04-10T10:31:16 IST" name="openurl" finished-at="2025-04-10T10:31:27 IST" duration-ms="11074" status="PASS">
+    <test started-at="2025-04-29T10:51:36 IST" name="Default test" finished-at="2025-04-29T10:53:26 IST" duration-ms="109742">
+      <class name="petsitcare_Admin_TestCases.dashboars_testcases">
+        <test-method is-config="true" signature="openurl()[pri:0, instance:petsitcare_Admin_TestCases.dashboars_testcases@6150c3ec]" started-at="2025-04-29T10:51:36 IST" name="openurl" finished-at="2025-04-29T10:51:49 IST" duration-ms="13161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openurl -->
-        <test-method signature="login1()[pri:1, instance:petsitcare_Admin_TestCases.login@7586beff]" started-at="2025-04-10T10:31:27 IST" name="login1" finished-at="2025-04-10T10:31:54 IST" duration-ms="26743" status="PASS">
+        <test-method signature="dashboard()[pri:0, instance:petsitcare_Admin_TestCases.dashboars_testcases@6150c3ec]" started-at="2025-04-29T10:51:49 IST" name="dashboard" finished-at="2025-04-29T10:53:25 IST" duration-ms="95566" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login1 -->
-        <test-method is-config="true" signature="closeurl()[pri:0, instance:petsitcare_Admin_TestCases.login@7586beff]" started-at="2025-04-10T10:31:54 IST" name="closeurl" finished-at="2025-04-10T10:31:55 IST" duration-ms="1137" status="PASS">
+        </test-method> <!-- dashboard -->
+        <test-method is-config="true" signature="closeurl()[pri:0, instance:petsitcare_Admin_TestCases.dashboars_testcases@6150c3ec]" started-at="2025-04-29T10:53:25 IST" name="closeurl" finished-at="2025-04-29T10:53:26 IST" duration-ms="865" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeurl -->
-      </class> <!-- petsitcare_Admin_TestCases.login -->
+      </class> <!-- petsitcare_Admin_TestCases.dashboars_testcases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
