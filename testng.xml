@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="petsitcare_User_TestCases.Login_TC_01"/>
+      <!--<class name="petsitcare_Admin_TestCases.login"/> -->
+      <class name="petsitcare_Admin_TestCases.dashboars_testcases"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
