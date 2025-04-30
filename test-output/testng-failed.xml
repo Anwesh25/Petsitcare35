@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="petsitcare_Admin_TestCases.ManageSubscriberTestCase">
+      <class name="petsitcare_Admin_TestCases.ManageSubscribersTest">
         <methods>
           <include name="closeurl"/>
-          <include name="testSubscribersActions"/>
           <include name="openurl"/>
+          <include name="testSubscribersActions"/>
         </methods>
-      </class> <!-- petsitcare_Admin_TestCases.ManageSubscriberTestCase -->
+      </class> <!-- petsitcare_Admin_TestCases.ManageSubscribersTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,16 +1,17 @@
 package petsitcare_Admin_PageObjects;
 
-import org.openqa.selenium.By;
+
+	import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-	public class Dashboardpetsitcare {
+	public class DashboardPage {
 	    
 		WebDriver driver;
 
-	    public Dashboardpetsitcare(WebDriver driver) {
+	    public DashboardPage(WebDriver driver) {
 	        this.driver = driver;
 	    }
 
@@ -34,4 +35,8 @@ import org.openqa.selenium.interactions.Actions;
 		
 			
 		}
+
+
+	
+
 
