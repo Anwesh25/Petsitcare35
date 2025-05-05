@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-29T16:11:08 IST" name="Suite" finished-at="2025-04-29T16:12:51 IST" duration-ms="102868">
+  <suite started-at="2025-05-05T12:12:19 IST" name="Default suite" finished-at="2025-05-05T12:19:56 IST" duration-ms="457686">
     <groups>
     </groups>
-    <test started-at="2025-04-29T16:11:08 IST" name="Test" finished-at="2025-04-29T16:12:51 IST" duration-ms="102868">
-      <class name="petsitcare_User_TestCases.Login_TC_01">
-        <test-method is-config="true" signature="openurl()[pri:0, instance:petsitcare_User_TestCases.Login_TC_01@6989da5e]" started-at="2025-04-29T16:10:54 IST" name="openurl" finished-at="2025-04-29T16:11:08 IST" duration-ms="13740" status="PASS">
+    <test started-at="2025-05-05T12:12:19 IST" name="Default test" finished-at="2025-05-05T12:19:56 IST" duration-ms="457686">
+      <class name="petsitcare_Admin_TestCases.Managesubscriber">
+        <test-method is-config="true" signature="openurl()[pri:0, instance:petsitcare_Admin_TestCases.Managesubscriber@69453e37]" started-at="2025-05-05T12:12:19 IST" name="openurl" finished-at="2025-05-05T12:14:58 IST" duration-ms="159222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openurl -->
-        <test-method signature="Login()[pri:0, instance:petsitcare_User_TestCases.Login_TC_01@6989da5e]" started-at="2025-04-29T16:11:08 IST" name="Login" finished-at="2025-04-29T16:11:11 IST" duration-ms="3305" status="PASS">
+        <test-method signature="testSubscribersActions()[pri:0, instance:petsitcare_Admin_TestCases.Managesubscriber@69453e37]" started-at="2025-05-05T12:14:58 IST" name="testSubscribersActions" finished-at="2025-05-05T12:19:56 IST" duration-ms="297544" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="closeurl()[pri:0, instance:petsitcare_User_TestCases.Login_TC_01@6989da5e]" started-at="2025-04-29T16:12:51 IST" name="closeurl" finished-at="2025-04-29T16:12:51 IST" duration-ms="510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeurl -->
-      </class> <!-- petsitcare_User_TestCases.Login_TC_01 -->
-      <class name="petsitcare_Admin_TestCases.dashboars_testcases">
-        <test-method is-config="true" signature="openurl()[pri:0, instance:petsitcare_Admin_TestCases.dashboars_testcases@229f66ed]" started-at="2025-04-29T16:11:11 IST" name="openurl" finished-at="2025-04-29T16:11:20 IST" duration-ms="9160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openurl -->
-        <test-method signature="dashboard()[pri:0, instance:petsitcare_Admin_TestCases.dashboars_testcases@229f66ed]" started-at="2025-04-29T16:11:20 IST" name="dashboard" finished-at="2025-04-29T16:12:50 IST" duration-ms="90094" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dashboard -->
-        <test-method is-config="true" signature="closeurl()[pri:0, instance:petsitcare_Admin_TestCases.dashboars_testcases@229f66ed]" started-at="2025-04-29T16:12:50 IST" name="closeurl" finished-at="2025-04-29T16:12:51 IST" duration-ms="199" status="PASS">
+        </test-method> <!-- testSubscribersActions -->
+        <test-method is-config="true" signature="closeurl()[pri:0, instance:petsitcare_Admin_TestCases.Managesubscriber@69453e37]" started-at="2025-05-05T12:19:56 IST" name="closeurl" finished-at="2025-05-05T12:19:56 IST" duration-ms="654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeurl -->
-      </class> <!-- petsitcare_Admin_TestCases.dashboars_testcases -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- petsitcare_Admin_TestCases.Managesubscriber -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
