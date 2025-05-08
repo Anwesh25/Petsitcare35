@@ -8,8 +8,9 @@
       <class name="petsitcare_User_TestCases.TC_13_servicerequest"/>
       <class name="petsitcare_User_TestCases.TC_11_mydoglist"/>
       <class name="petsitcare_User_TestCases.TC_10_myservice"/>
-      <class name="petsitcare_Admin_TestCases.login"/>
       <class name="petsitcare_User_TestCases.TC_12_wallet"/>
+      <class name="petsitcare_User_TestCases.Managesubscriber"/>
+      <class name="petsitcare_Admin_TestCases.Managesubscriber"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite>

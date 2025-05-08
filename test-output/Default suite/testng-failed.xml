@@ -3,13 +3,36 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="petsitcare_User_TestCases.TC_14_Recivedservice">
+=======
+<<<<<<< HEAD
+      <class name="petsitcare_Admin_TestCases.dashboars_testcases">
+>>>>>>> 666e916d24cf633b10a4e881612622bcc4854a20
         <methods>
+          <include name="dashboard"/>
           <include name="closeurl"/>
+<<<<<<< HEAD
           <include name="Recivedservice"/>
+=======
+=======
+      <class name="petsitcare_User_TestCases.Login_TC_01">
+        <methods>
+>>>>>>> d208da4ae096e1f9313f4af22ee88a28963ea4c6
+>>>>>>> 666e916d24cf633b10a4e881612622bcc4854a20
           <include name="openurl"/>
+          <include name="closeurl"/>
+          <include name="Login"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- petsitcare_User_TestCases.TC_14_Recivedservice -->
+=======
+<<<<<<< HEAD
+      </class> <!-- petsitcare_Admin_TestCases.dashboars_testcases -->
+=======
+      </class> <!-- petsitcare_User_TestCases.Login_TC_01 -->
+>>>>>>> d208da4ae096e1f9313f4af22ee88a28963ea4c6
+>>>>>>> 666e916d24cf633b10a4e881612622bcc4854a20
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

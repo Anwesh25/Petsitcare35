@@ -1,22 +1,25 @@
 package petsitcare_User_TestCases;
 
 import org.testng.annotations.Test;
-import petsitcare_User_PageObjects.Login_PO_01;
+
+import petsitcare_User_PageObjects.LoginPage_PO_01;
 import petsitcare_User_PageObjects.Recivedservice_PO_14;
 import petsitcare_user_base.User_base;
 
 public class TC_14_Recivedservice extends User_base {
-	Login_PO_01 lg; 
+
+    LoginPage_PO_01 login;
 	Recivedservice_PO_14 rs;
 	
 	@Test(priority=6)
-	public void Recivedservice() throws InterruptedException {
-		 lg= new Login_PO_01(driver) ; 
-		  lg.sign();
-			lg.email("buyer.ncrypted@gmail.com");
-			lg.password("123456");
-			lg.signin();
-			
+	 public void validLoginTest() throws InterruptedException {
+        login = new LoginPage_PO_01(driver);
+        login.signin();
+        login.username("buyer.ncrypted@gmail.com");
+        login.password("123456");
+        login.login();
+        
+        
 			rs=new Recivedservice_PO_14(driver);
 			rs.recivedservice();
 			rs.profilepic();

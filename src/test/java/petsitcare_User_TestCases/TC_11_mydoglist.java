@@ -3,22 +3,22 @@ package petsitcare_User_TestCases;
 import org.testng.annotations.Test;
 
 import petsitcare_User_PageObjects.Doglist_PO_11;
-import petsitcare_User_PageObjects.Login_PO_01;
+import petsitcare_User_PageObjects.LoginPage_PO_01;
 import petsitcare_user_base.User_base;
 
 public class TC_11_mydoglist extends User_base {
 	
-	Login_PO_01 lg; 
+    LoginPage_PO_01 login;
 	Doglist_PO_11 mdl;
 	
 	@Test(priority=3)
-	public void mydoglist() throws InterruptedException {
-		 lg= new Login_PO_01(driver) ; 
-		  lg.sign();
-			lg.email("buyer.ncrypted@gmail.com");
-			lg.password("123456");
-			lg.signin();
-			
+    public void validLoginTest() throws InterruptedException {
+        login = new LoginPage_PO_01(driver);
+        login.signin();
+        login.username("buyer.ncrypted@gmail.com");
+        login.password("123456");
+        login.login();
+    
 			
 			mdl=new Doglist_PO_11(driver);
 			mdl.doglist();
