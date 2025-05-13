@@ -14,4 +14,14 @@
       <class name="petsitcare_Admin_TestCases.Managesubscriber"/>
     </classes>
   </test>
-</suite>
+  <test thread-count="5" name="AdminTest">
+    <classes>
+      <class name="petsitcare_User_TestCases.Managesubscriber"/>
+      <class name="petsitcare_Admin_TestCases.Managesubscriber"/>
+    </classes>
+  </test>
+</suite> 
+
+
+
+  
