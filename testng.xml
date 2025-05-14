@@ -3,9 +3,25 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+          <class name="petsitcare_User_TestCases.Login_TC_01"/>
+          <class name="petsitcare_User_TestCases.TC_10_myservice"/>
+          <class name="petsitcare_User_TestCases.TC_11_mydoglist"/>
+          <class name="petsitcare_User_TestCases.TC_12_wallet"/>
+          <class name="petsitcare_User_TestCases.TC_13_servicerequest"/>
+          <class name="petsitcare_User_TestCases.TC_14_Recivedservice"/>
+          <class name="petsitcare_User_TestCases.TC_15_notifications"/>
       <class name="petsitcare_User_TestCases.Managesubscriber"/>
-      <!--<class name="petsitcare_Admin_TestCases.login"/> -->
       <class name="petsitcare_Admin_TestCases.Managesubscriber"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+  <test thread-count="5" name="AdminTest">
+    <classes>
+      <class name="petsitcare_User_TestCases.Managesubscriber"/>
+      <class name="petsitcare_Admin_TestCases.Managesubscriber"/>
+    </classes>
+  </test>
+</suite> 
+
+
+
+  
