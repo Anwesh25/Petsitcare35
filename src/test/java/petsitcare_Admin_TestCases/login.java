@@ -18,15 +18,21 @@ public class login extends Base{
 		
 		Dashboard_PO_01 Db=new Dashboard_PO_01(driver);
 		
-	     String file= "C:\\Users\\NISHITH\\git\\Petsitcare35\\excel\\Book1.xlsx";
+		String path1=System.getProperty("user.dir");
+		String path2="\\excel\\Book1.xlsx";
+		String file=path1+path2;
+		
+		System.out.println(file);
+		 //String file= "C:\\Users\\NISHITH\\git\\Petsitcare35\\excel\\Book1.xlsx";
+	    // String file= "System.getProperty(\"user.dir\")+\"\\\\excel\\\\\"+\"Book1.xlsx\"";
 		  int xlrow=XLUtils.getRowCount(file, "Sheet1");
 		
 		  for(int r=1;r<=xlrow;r++) {
 			  
-		 String user= XLUtils.getCellData(file, "Sheet1", r, 1);
-		 String psw  =  XLUtils.getCellData(file, "Sheet1", r, 2);
-		 Db.username(user);
-		 Db.password(psw);
+		 String user1= XLUtils.getCellData(file, "Sheet1", r, 1);
+		 String psw1  =  XLUtils.getCellData(file, "Sheet1", r, 2);
+		 Db.username(user1);
+		 Db.password(psw1);
 		 Db.login();
 		 
 		 
@@ -36,7 +42,7 @@ public class login extends Base{
 			
 			if(actitle.equals(exptitle)) {
 				System.out.println("login  Passed,  vaid credentials ");
-				screenshot();
+				screenshot(null);
 				
 				Thread.sleep(3000);
 				
@@ -45,17 +51,18 @@ public class login extends Base{
 				ac.moveToElement(username).perform();
 				
 				Thread.sleep(3000);
+				if(r!=xlrow) {
 				
 			//WebElement logout=driver.findElement(By.xpath("(//i[@class='fa fa-key'])[1]"));
 		    WebElement logout=driver.findElement(By.xpath("//ul[@class='dropdown-menu']/li[2]/a"));
 			ac.moveToElement(logout).perform();
 			ac.click(logout).perform();
-			
+				}
 			Thread.sleep(3000);
 			//logout.click();
 						
 			}else {
-				System.out.println("login failed, invalid credentials "+user+" ,  "+psw);
+				System.out.println("login failed, invalid credentials "+user1+" ,  "+psw1);
 				
 			}
 		  }
