@@ -8,16 +8,13 @@ import petsitcare_user_base.User_base;
 
 public class TC_11_mydoglist extends User_base {
 	
-    LoginPage_PO_01 login;
+   
 	Doglist_PO_11 mdl;
 	
 	@Test(priority=3)
     public void validLoginTest() throws InterruptedException {
-        login = new LoginPage_PO_01(driver);
-        login.signin();
-        login.username("buyer.ncrypted@gmail.com");
-        login.password("123456");
-        login.login();
+		TC_10_myservice ms=new TC_10_myservice();
+		ms.validLoginTest();
     
 			
 			mdl=new Doglist_PO_11(driver);

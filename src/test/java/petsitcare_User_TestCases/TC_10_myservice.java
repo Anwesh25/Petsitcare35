@@ -7,16 +7,13 @@ import petsitcare_User_PageObjects.Myservices_PO_10;
 import petsitcare_user_base.User_base;
 
 public class TC_10_myservice extends User_base {
-    LoginPage_PO_01 login;
+    
     Myservices_PO_10 ms;
 
     @Test(priority = 2)
     public void validLoginTest() throws InterruptedException {
-        login = new LoginPage_PO_01(driver);
-        login.signin();
-        login.username("buyer.ncrypted@gmail.com");
-        login.password("123456");
-        login.login();
+    	Login_TC_01 Lg=new Login_TC_01();
+    	Lg.validLoginTest();
     
 
         ms = new Myservices_PO_10(driver);

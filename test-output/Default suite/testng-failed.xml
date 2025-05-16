@@ -3,6 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="petsitcare_Admin_TestCases.coomon_menu">
+        <methods>
+          <include name="closeurl"/>
+          <include name="commonmenu_content"/>
+          <include name="openurl"/>
+        </methods>
+      </class> <!-- petsitcare_Admin_TestCases.coomon_menu -->
+=======
       <class name="petsitcare_User_TestCases.TC_15_notifications">
         <methods>
           <include name="closeurl"/>
@@ -10,6 +19,7 @@
           <include name="openurl"/>
         </methods>
       </class> <!-- petsitcare_User_TestCases.TC_15_notifications -->
+>>>>>>> main
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -8,16 +8,13 @@ import petsitcare_user_base.User_base;
 
 public class TC_12_wallet extends User_base {
 	
-    LoginPage_PO_01 login; 
+   
 	Wallet_PO_12 wt;
 
 	@Test (priority=4)
 	 public void validLoginTest() throws InterruptedException {
-        login = new LoginPage_PO_01(driver);
-        login.signin();
-        login.username("buyer.ncrypted@gmail.com");
-        login.password("123456");
-        login.login();
+		TC_11_mydoglist md=new TC_11_mydoglist();
+		md.validLoginTest();
         
         
 		 wt= new Wallet_PO_12(driver);
