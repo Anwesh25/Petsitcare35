@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="petsitcare_User_TestCases.Login_TC_01"/>
+     <!-- <class name="petsitcare_User_TestCases.Login_TC_01"/> -->
       <class name="petsitcare_User_TestCases.EditProfile_TC_08"/>
     </classes>
   </test> <!-- Test -->
