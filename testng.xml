@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test1">
     <classes>
-      <class name="petsitcare_User_TestCases.Login_TC_01"/>
-      <!--<class name="petsitcare_Admin_TestCases.login"/> -->
-      <class name="petsitcare_Admin_TestCases.dashboars_testcases"/>
+      <class name="petsitcare_User_TestCases.TC_15_notifications"/>
+    <!--  <class name="petsitcare_User_TestCases.TC_14_Recivedservice"/> -->
+    <!--  <class name="petsitcare_User_TestCases.Login_TC_01"/> -->
+    <!--  <class name="petsitcare_User_TestCases.TC_13_servicerequest"/> -->
+    <!--  <class name="petsitcare_User_TestCases.TC_11_mydoglist"/> -->
+    <!--  <class name="petsitcare_User_TestCases.TC_10_myservice"/> -->
+    <!--  <class name="petsitcare_User_TestCases.TC_12_wallet"/> -->
+    
+    </classes>
+  </test>
+  <test thread-count="5" name="Test2">
+    <classes>
+      
+      <class name="petsitcare_Admin_TestCases.Managesubscriber_TC_17"/>
+     <!-- <class name="petsitcare_Admin_TestCases.dashboars_TC_02"/>  -->
+    <!--  <class name="petsitcare_Admin_TestCases.login_TC_01"/> -->
+     <!--  <class name="petsitcare_Admin_TestCases.coomonmenu_content_TC_03"/>  -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
