@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test1">
     <classes>
-      <class name="petsitcare_User_TestCases.TC_15_notifications"/>
+    <class name="petsitcare_User_TestCases.TC_15_notifications"/>
+    <class name="petsitcare_User_TestCases.EditProfile_TC_08"/>
     <!--  <class name="petsitcare_User_TestCases.TC_14_Recivedservice"/> -->
     <!--  <class name="petsitcare_User_TestCases.Login_TC_01"/> -->
     <!--  <class name="petsitcare_User_TestCases.TC_13_servicerequest"/> -->
