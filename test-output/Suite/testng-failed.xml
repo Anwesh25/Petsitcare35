@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="petsitcare_Admin_TestCases.login">
+      <class name="petsitcare_Admin_TestCases.ManageQuestionsTest">
         <methods>
-          <include name="closeurl"/>
-          <include name="login1"/>
           <include name="openurl"/>
+          <include name="testQuestionsPageFlow"/>
+          <include name="tearDownSuite"/>
         </methods>
-      </class> <!-- petsitcare_Admin_TestCases.login -->
+      </class> <!-- petsitcare_Admin_TestCases.ManageQuestionsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

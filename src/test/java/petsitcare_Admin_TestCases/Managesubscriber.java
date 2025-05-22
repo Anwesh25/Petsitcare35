@@ -1,55 +1,40 @@
 package petsitcare_Admin_TestCases;
 
+import petsitcare_Admin_PageObjects.subscribers;
+import petsitcare_Admin_base.Base;
 
-	import petsitcare_Admin_PageObjects.DashboardMS;
-	import petsitcare_Admin_PageObjects.subscribers;
+import java.io.IOException;
 
-	import petsitcare_Admin_base.Base;
+import org.testng.annotations.Test;
 
-	import java.io.IOException;
+public class Managesubscriber extends Base {
+    
+    @Test
+    public void testSubscribersActions() throws InterruptedException, IOException {
+        login lg = new login();
+        lg.login1();  // Logs into the application
 
-	import org.testng.annotations.Test;
+        Thread.sleep(2000);
 
-		
-		//import utils.ScreenshotUtil;
+        // Using the unified 'subscribers' POM class
+        subscribers subsPage = new subscribers(driver);
 
+        subsPage.navigateToSubscribers();  // Opens Manage Subscribers -> Subscribers
 
-		public class Managesubscriber extends Base {
-			@Test
-		 public void testSubscribersActions() throws InterruptedException, IOException {
-		       login lg=new login();
-		    	lg.login1();
+        
+        Thread.sleep(2000);
+        subsPage.selectRecords("50");      // Selects 50 records from dropdown
 
-		        Thread.sleep(2000);
-		        DashboardMS dashboard = new DashboardMS(driver);
-		        dashboard.navigateToSubscribers();
-		        dashboard.subscribersOption();
-		        
-		        subscribers subscribers = new subscribers(driver);
+        Thread.sleep(2000);
+        subsPage.clickExcel();             // Clicks on Excel button to export
 
-		        subscribers.clickHome();
-		        dashboard.navigateToSubscribers();
-		        dashboard.subscribersOption();
-		        
-		        
-		        Thread.sleep(3000);
-		        subscribers.selectRecords("50");
-		        
-		        Thread.sleep(3000);
-		        subscribers.clickExcel();
-		        
-		        Thread.sleep(3000);
-		        subscribers.searchSubscriber("sunil");
-		       
+        Thread.sleep(2000);
+        subsPage.searchSubscriber("mansi");  // Searches for "sunil"
 
-		        Thread.sleep(3000);
-		        subscribers.deleteSubscriber();
-		        
-		        Thread.sleep(3000);
-		        // Optionally confirm delete too
-		         subscribers.confirmDelete();
+        Thread.sleep(2000);
+        subsPage.deleteSubscriber();       // Clicks delete icon
 
-		    }
-		}
-
-
+        Thread.sleep(2000);
+        subsPage.cancelDelete();           // Cancels the delete operation
+    }
+}

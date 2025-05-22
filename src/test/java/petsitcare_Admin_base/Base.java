@@ -33,10 +33,17 @@ public class Base {
 		
 	}
 	
-	@AfterClass
-	public void closeurl() {
-		driver.close();
+	//@AfterClass
+	//public void closeurl() {
+		//driver.close();
+	
+	@AfterSuite
+	public void tearDownSuite() {
+	    if (driver != null) {
+	        driver.quit(); // this will close the browser once entire suite is done
+	    }
 	}
+
 	
 	
 	public void screenshot(WebElement ele) throws IOException {

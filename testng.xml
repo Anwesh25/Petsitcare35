@@ -3,9 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="petsitcare_User_TestCases.Managesubscriber"/>
-      <!--<class name="petsitcare_Admin_TestCases.login"/> -->
-      <class name="petsitcare_Admin_TestCases.Managesubscriber"/>
+      <class name="petsitcare_Admin_TestCases.ManageQuestionsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
