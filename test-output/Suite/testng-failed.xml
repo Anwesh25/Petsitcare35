@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test2(failed)">
+  <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="petsitcare_Admin_TestCases.Managesubscriber_TC_17">
+      <class name="petsitcare_User_TestCases.TC_15_notifications">
         <methods>
           <include name="closeurl"/>
+          <include name="validLoginTest"/>
           <include name="openurl"/>
-          <include name="testSubscribersActions"/>
         </methods>
-      </class> <!-- petsitcare_Admin_TestCases.Managesubscriber_TC_17 -->
+      </class> <!-- petsitcare_User_TestCases.TC_15_notifications -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
