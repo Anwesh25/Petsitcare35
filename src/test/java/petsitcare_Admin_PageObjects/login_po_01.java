@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Dashboard_PO_01 {
+public class login_po_01{
 	
 	//Admin Dashboard info pageobjects
 	public static WebDriver driver;
 	
-	public Dashboard_PO_01(WebDriver driver){
+	public login_po_01(WebDriver driver){
 	
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
